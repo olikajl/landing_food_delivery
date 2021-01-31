@@ -1,0 +1,36 @@
+.hero 
+  background-color: #F0F5FB
+  max-height: 710px
+  padding: 47px 0 508px 0
+  // overflow: hidden      
+  &__title
+    margin-bottom: 18px
+  &__subtitle
+    font-size: 18px
+    line-height: 150%
+    text-align: center
+    max-width: 621px
+    margin: 0 auto
+  &__row
+    display: flex
+    // overflow: hidden
+  &__img
+    flex: 0 0 100%
+    transform: translate(10.7%, 5.9%) 
+  &__proposal
+    transform: translate(-100%, 55%)
+    flex-shrink: 0
+    line-height: 140%
+    text-align: right
+    max-width: 200px
+    max-height: 44px
+    span
+      +montserratBold
+      color: #F87848
+    &::before
+      content: url(../../img/hero/plus.png)
+      transform: translate(-112%, 124%)
+      display: flex
+      // max-width: 185px
+      // max-height: 77.5px
+    

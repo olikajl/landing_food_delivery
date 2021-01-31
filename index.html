@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,51 +11,51 @@
 </head>
 <body class="page-body">
   <heder class="heder">
-    <nav class="navbar">
-      <div class="container">
+    <div class="container">
+      <nav class="navbar">      
         <div class="navbar__row">
           <ul class="navbar__menu">
-            <li class="menu__item">Payment</li>
-            <li class="menu__item">About us</li>
-            <li class="menu__item">Contacts</li>
+            <li class="navbar__item"><a href="#">Payment</a></li>
+            <li class="navbar__item"><a href="#">About us</a></li>
+            <li class="navbar__item"><a href="#">Contacts</a></li>
           </ul>
-          <div class="navber__logo">
-            <img src="img/heder/logo.png" alt="Логотип">
+          <div class="navbar__logo">
+            <a href="#"><img src="img/heder/logo.png" alt="Логотип"></a>
           </div>
           <ul class="navbar__info">
-            <li class="navbar__work-time">Daily 11am - 9pm</li>
+            <li class="navbar__work-time"><span>Daily 11am - 9pm</span></li>
             <li class="navbar__phone">0 800 33 08 98</li>
           </ul>
           <!-- /.navbar__info -->
         </div>
         <!-- /.navbar__row -->
-      </div>
-      <!-- /.container -->
-    </nav>
-    <!-- /.navbar -->
+      </nav>
+      <!-- /.navbar -->
+    </div>
+    <!-- /.container --> 
   </heder>
   <main class="main">
-    <section class="hero">
+    <section class="hero section">
       <div class="container">
-        <h1 class="hero__title">Food delivery in Kovel</h1>
+        <h1 class="hero__title section__title">Food delivery in Kovel</h1>
         <div class="hero__subtitle">If you decide to relax or have unexpected guests, call us. We make sure that your vacation is comfortable, enjoyable and delicious</div>
-        <div class="hero__img">
-          <img src="img/hero/pizza.png" alt="Пицца" width="852" height="631">
+        <div class="hero__row">
+          <div class="hero__img"><img src="img/hero/pizza.png" alt="Пицца" width="852" height="631"></div>          
           <div class="hero__proposal">When ordering from <span>700 UAH</span>, delivery is free</div>
         </div>        
       </div>
       <!-- /.container -->
     </section>
     <!-- /.hero -->
-    <section class="popular-dishes">
+    <section class="popular-dishes section">
       <div class="container">
         <div class="popular-dishes__cart"></div>
         <!-- /.popular-dishes__cart -->
-        <h2 class="popular-dishes__title">Popular dishes</h2>
+        <h2 class="popular-dishes__title section__title">Popular dishes</h2>
         <!-- Табы -->
         <div class="popular-dishes-tabheader">
           <div class="popular-dishes-tabheader__items">
-            <div class="popular-dishes-tabheader__item">Pizza</div>
+            <div class="popular-dishes-tabheader__item popular-dishes-tabheader__item_active">Pizza</div>
             <div class="popular-dishes-tabheader__item">Sushi</div>
             <div class="popular-dishes-tabheader__item">Salad</div>
             <div class="popular-dishes-tabheader__item">Dessert</div>
@@ -68,16 +68,134 @@
           <div class="popular-dishes-tabcontent">
             <div class="popular-dishes__cards">
               <div class="popular-dishes__card">
-                <div class="popular-dishes__img">
-                  <img src="img/popular-dishes/pizza_1.jpg" alt="Пицца Quattro formaggi">
+                <div class="popular-dishes__vertical">
+                  <div class="popular-dishes__img">
+                    <img src="img/popular-dishes/pizza_1.png" alt="Пицца Quattro formaggi" width="170" height="173">
+                  </div>
+                  <div class="popular-dishes__row">
+                    <div class="popular-dishes__cardtitle">Quattro formaggi</div>
+                    <div class="popular-dishes__size">32cm</div>
+                  </div>
+                  <div class="popular-dishes__description">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                  <div class="popular-dishes__price">119 uah</div>
+                  <button class="popular-dishes__button"><img src="img/popular-dishes/package.svg" alt=""></button>
                 </div>
-                <div class="popular-dishes__row">
-                  <div class="popular-dishes__title">Quattro formaggi</div>
-                  <div class="popular-dishes__size">32cm</div>
+                <!-- /.popular-dishes__vertical -->
+              </div>
+              <!-- /.popular-dishes__card -->
+
+              <div class="popular-dishes__card">
+                <div class="popular-dishes__vertical">
+                  <div class="popular-dishes__img">
+                    <img src="img/popular-dishes/pizza_2.png" alt="Пицца Quattro formaggi" width="170" height="173">
+                  </div>
+                  <div class="popular-dishes__row">
+                    <div class="popular-dishes__cardtitle">Карбонара</div>
+                    <div class="popular-dishes__size">32cm</div>
+                  </div>
+                  <div class="popular-dishes__description">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                  <div class="popular-dishes__price">119 uah</div>
+                  <button class="popular-dishes__button"><img src="img/popular-dishes/package.svg" alt=""></button>
                 </div>
-                <div class="popular-dishes__description">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
-                <div class="popular-dishes__price">119 uah</div>
-                <button class="popular-dishes__button"><img src="img/popular-dishes/package.svg" alt=""></button>
+                <!-- /.popular-dishes__vertical -->
+              </div>
+              <!-- /.popular-dishes__card -->
+
+              <div class="popular-dishes__card">
+                <div class="popular-dishes__vertical">
+                  <div class="popular-dishes__img">
+                    <img src="img/popular-dishes/pizza_3.png" alt="Пицца Quattro formaggi" width="170" height="173">
+                  </div>
+                  <div class="popular-dishes__row">
+                    <div class="popular-dishes__cardtitle">Філадельфія селмон</div>
+                    <div class="popular-dishes__size">32cm</div>
+                  </div>
+                  <div class="popular-dishes__description">Dough, mozzarella, barrel, eggs, Parmesan cheese</div>
+                  <div class="popular-dishes__price">119 uah</div>
+                  <button class="popular-dishes__button"><img src="img/popular-dishes/package.svg" alt=""></button>
+                </div>
+                <!-- /.popular-dishes__vertical -->
+              </div>
+              <!-- /.popular-dishes__card -->
+
+              <div class="popular-dishes__card">
+                <div class="popular-dishes__vertical">
+                  <div class="popular-dishes__img">
+                    <img src="img/popular-dishes/pizza_4.png" alt="Пицца Quattro formaggi" width="170" height="173">
+                  </div>
+                  <div class="popular-dishes__row">
+                    <div class="popular-dishes__cardtitle">Ді маре</div>
+                    <div class="popular-dishes__size">32cm</div>
+                  </div>
+                  <div class="popular-dishes__description">Dough, mozzarella, barrel, eggs, Parmesan cheese</div>
+                  <div class="popular-dishes__price">119 uah</div>
+                  <button class="popular-dishes__button"><img src="img/popular-dishes/package.svg" alt=""></button>
+                </div>
+                <!-- /.popular-dishes__vertical -->
+              </div>
+              <!-- /.popular-dishes__card -->
+              <div class="popular-dishes__card">
+                <div class="popular-dishes__vertical">
+                  <div class="popular-dishes__img">
+                    <img src="img/popular-dishes/pizza_5.png" alt="Пицца Quattro formaggi" width="170" height="173">
+                  </div>
+                  <div class="popular-dishes__row">
+                    <div class="popular-dishes__cardtitle">Кватро формаджіо</div>
+                    <div class="popular-dishes__size">32cm</div>
+                  </div>
+                  <div class="popular-dishes__description">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                  <div class="popular-dishes__price">119 uah</div>
+                  <button class="popular-dishes__button"><img src="img/popular-dishes/package.svg" alt=""></button>
+                </div>
+                <!-- /.popular-dishes__vertical -->
+              </div>
+              <!-- /.popular-dishes__card -->
+              <div class="popular-dishes__card">
+                <div class="popular-dishes__vertical">
+                  <div class="popular-dishes__img">
+                    <img src="img/popular-dishes/pizza_6.png" alt="Пицца Quattro formaggi" width="170" height="173">
+                  </div>
+                  <div class="popular-dishes__row">
+                    <div class="popular-dishes__cardtitle">Кватро формаджіо</div>
+                    <div class="popular-dishes__size">32cm</div>
+                  </div>
+                  <div class="popular-dishes__description">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                  <div class="popular-dishes__price">119 uah</div>
+                  <button class="popular-dishes__button"><img src="img/popular-dishes/package.svg" alt=""></button>
+                </div>
+                <!-- /.popular-dishes__vertical -->
+              </div>
+              <!-- /.popular-dishes__card -->
+              <div class="popular-dishes__card">
+                <div class="popular-dishes__vertical">
+                  <div class="popular-dishes__img">
+                    <img src="img/popular-dishes/pizza_7.png" alt="Пицца Quattro formaggi" width="170" height="173">
+                  </div>
+                  <div class="popular-dishes__row">
+                    <div class="popular-dishes__cardtitle">Кватро формаджіо</div>
+                    <div class="popular-dishes__size">32cm</div>
+                  </div>
+                  <div class="popular-dishes__description">Dough, Mozzarella, Cheddar, Blue, Parmesan</div>
+                  <div class="popular-dishes__price">119 uah</div>
+                  <button class="popular-dishes__button"><img src="img/popular-dishes/package.svg" alt=""></button>
+                </div>
+                <!-- /.popular-dishes__vertical -->
+              </div>
+              <!-- /.popular-dishes__card -->
+              <div class="popular-dishes__card">
+                <div class="popular-dishes__vertical">
+                  <div class="popular-dishes__img">
+                    <img src="img/popular-dishes/pizza_8.png" alt="Пицца Quattro formaggi" width="170" height="173">
+                  </div>
+                  <div class="popular-dishes__row">
+                    <div class="popular-dishes__cardtitle">Кватро формаджіо</div>
+                    <div class="popular-dishes__size">32cm</div>
+                  </div>
+                  <div class="popular-dishes__description">Dough, mozzarella, barrel, eggs, Parmesan cheese</div>
+                  <div class="popular-dishes__price popular-dishes__price_low">119 грн.</div>
+                  <button class="popular-dishes__button"><img src="img/popular-dishes/package.svg" alt=""></button>
+                </div>
+                <!-- /.popular-dishes__vertical -->
               </div>
               <!-- /.popular-dishes__card -->
             </div>
@@ -85,7 +203,7 @@
           </div>
           <!-- /.popular-dishes-tabcontent -->
         </div>
-        <!-- /.popular-dishes-tabcontainer -->
+        <!-- /.popular-dishes-tabcontainer -->        
         <button class="popular-dishes__download-more"><img src="img/popular-dishes/arrows.svg" alt=""></button>
       </div>
       <!-- /.container -->      
@@ -105,24 +223,30 @@
       <!-- /.container -->
     </section>
     <!-- /.instagram -->
-    <section class="feedback">
-      <h2 class="feedback__title">Fill out the form and we will call you</h2>
+    <section class="feedback section">
+      <div class="container">
+        <h2 class="feedback__title section__title">Fill out the form and we will call you</h2>
       <form action="#" class="feedback__form">
         <input type="text" class="feedback__input" placeholder="Your name">
         <input type="tel" class="feedback__input" placeholder="Phone number">
         <button class="instagram__button">Сall back <img src="img/feedback/arrow.svg" alt="arrow"></button>
       </form>
       <div class="feedback__img"><img src="img/feedback/car.png" alt="car"></div>
+      </div>
+      <!-- /.container -->      
     </section>
     <!-- /.feedback -->
   </main>
   <footer class="footer">
-    <div class="footer__row">
-      <div class="footer__copyright">© Classic Family Restaurant</div>
-      <div class="footer__logo"><img src="img/heder/logo.png" alt="Логотип" width="95.12" height="49"></div>
-      <div class="footer__slogan">Made with delight by <span>harmuder</span></div>
+    <div class="container">
+      <div class="footer__row">
+        <div class="footer__copyright">© Classic Family Restaurant</div>
+        <div class="footer__logo"><img src="img/heder/logo.png" alt="Логотип" width="95.12" height="49"></div>
+        <div class="footer__slogan">Made with delight by <span>harmuder</span></div>
+      </div>
+      <!-- /.footer__row -->
     </div>
-    <!-- /.footer__row -->
+    <!-- /.container -->    
   </footer>  
 </body>
 </html>

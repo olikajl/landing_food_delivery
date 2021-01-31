@@ -1,0 +1,54 @@
+.heder
+  background-color: #F0F5FB
+.navbar  
+  padding: 25px 0 25px 0
+  &__row
+    display: flex
+    justify-content: space-between
+    align-items: center 
+    // flex-wrap: wrap   
+  &__menu
+    display: flex
+    flex: 0 0 33.333%
+    margin: 17px 0 0 0
+    padding: 0
+  &__item
+    list-style-type: none    
+    margin-right: 40px
+    &:last-child
+      margin-right: 0
+    a
+      text-decoration: none
+      color: #000000
+  &__logo
+    flex: 0 0 33.333%
+    text-align: center
+  &__info
+    display: flex
+    align-items: center
+    flex: 0 0 33.333%
+    list-style-position: inside
+    margin: 17px 0 0 3px
+    padding: 0
+  &__work-time
+    color: #46CB72
+    margin-right: 40px
+    span
+      color: #000000
+  &__phone
+    list-style-type: none
+    display: flex
+    align-items: center
+    +montserratBold 
+    font-size: 18px   
+    &::before
+      content: url(../../img/heder/phone.svg)
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 33px
+      height: 33px
+      border-radius: 50%     
+      background: linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%)
+      box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26)
+      margin-right: 16px

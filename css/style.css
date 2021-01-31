@@ -1,3 +1,9 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .page {
   height: 100%;
 }
@@ -13,5 +19,426 @@
       align-content: start;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.section__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+}
+
+/* Стили для navbar */
+.heder {
+  background-color: #F0F5FB;
+}
+
+.navbar {
+  padding: 25px 0 25px 0;
+}
+
+.navbar__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  margin: 17px 0 0 0;
+  padding: 0;
+}
+
+.navbar__item {
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+.navbar__item:last-child {
+  margin-right: 0;
+}
+
+.navbar__item a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar__logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  text-align: center;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  list-style-position: inside;
+  margin: 17px 0 0 3px;
+  padding: 0;
+}
+
+.navbar__work-time {
+  color: #46CB72;
+  margin-right: 40px;
+}
+
+.navbar__work-time span {
+  color: #000000;
+}
+
+.navbar__phone {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.navbar__phone::before {
+  content: url(../../img/heder/phone.svg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background: linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
+  -webkit-box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+          box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+  margin-right: 16px;
+}
+
+/* Стили для main */
+.main {
+  display: -ms-grid;
+  display: grid;
+}
+
+/* Стили для hero */
+.hero {
+  background-color: #F0F5FB;
+  max-height: 710px;
+  padding: 47px 0 508px 0;
+}
+
+.hero__title {
+  margin-bottom: 18px;
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  max-width: 621px;
+  margin: 0 auto;
+}
+
+.hero__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  -webkit-transform: translate(10.7%, 5.9%);
+          transform: translate(10.7%, 5.9%);
+}
+
+.hero__proposal {
+  -webkit-transform: translate(-100%, 55%);
+          transform: translate(-100%, 55%);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  line-height: 140%;
+  text-align: right;
+  max-width: 200px;
+  max-height: 44px;
+}
+
+.hero__proposal span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #F87848;
+}
+
+.hero__proposal::before {
+  content: url(../../img/hero/plus.png);
+  -webkit-transform: translate(-112%, 124%);
+          transform: translate(-112%, 124%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Стили для popular-dishes */
+.popular-dishes {
+  margin-top: 104px;
+}
+
+.popular-dishes__title {
+  margin-bottom: 49px;
+}
+
+.popular-dishes-tabheader {
+  margin-bottom: 50px;
+}
+
+.popular-dishes-tabheader__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popular-dishes-tabheader__item {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ECEEF6), to(#ECEEF6)), #59AAF1;
+  background: linear-gradient(0deg, #ECEEF6, #ECEEF6), #59AAF1;
+  border-radius: 45px;
+  text-align: center;
+  line-height: 140%;
+  padding: 17px 0 16px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.popular-dishes-tabheader__item:nth-of-type(1) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 135px;
+          flex: 0 1 135px;
+  margin-right: 31px;
+}
+
+.popular-dishes-tabheader__item:nth-of-type(2) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 135px;
+          flex: 0 1 135px;
+  margin-right: 31px;
+}
+
+.popular-dishes-tabheader__item:nth-of-type(3) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 145px;
+          flex: 0 1 145px;
+  margin-right: 31px;
+}
+
+.popular-dishes-tabheader__item:nth-of-type(4) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 145px;
+          flex: 0 1 145px;
+  margin-right: 31px;
+}
+
+.popular-dishes-tabheader__item:nth-of-type(5) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 145px;
+          flex: 0 1 145px;
+}
+
+.popular-dishes-tabheader__item_active {
+  color: #ffffff;
+  background: #59AAF1;
+}
+
+.popular-dishes-tabcontainer {
+  max-width: 1160px;
+}
+
+.popular-dishes__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px -20px 46px -20px;
+}
+
+.popular-dishes__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  padding: 0px 20px;
+  margin-bottom: 42px;
+}
+
+.popular-dishes__vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  border: 2px solid #ECEEF7;
+  border-radius: 15px;
+  min-width: 260px;
+  padding: 36px 0 0 0;
+}
+
+.popular-dishes__vertical::after {
+  content: url(../../img/popular-dishes/slice.svg);
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 95%);
+          transform: translate(-50%, 95%);
+}
+
+.popular-dishes__img {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.popular-dishes__img img {
+  -webkit-filter: drop-shadow(20px 10px 20px rgba(143, 92, 32, 0.1));
+          filter: drop-shadow(20px 10px 20px rgba(143, 92, 32, 0.1));
+  -webkit-filter: drop-shadow(10px 5px 10px rgba(143, 92, 32, 0.1));
+          filter: drop-shadow(10px 5px 10px rgba(143, 92, 32, 0.1));
+}
+
+.popular-dishes__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0 14px 0 23px;
+  margin-bottom: 8px;
+}
+
+.popular-dishes__cardtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.popular-dishes__size {
+  font-size: 12px;
+  line-height: 140%;
+}
+
+.popular-dishes__description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-size: 12px;
+  line-height: 149%;
+  padding: 0 14px 0 23px;
+  margin-bottom: 22px;
+}
+
+.popular-dishes__price {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.popular-dishes__price_low {
+  text-transform: lowercase;
+}
+
+.popular-dishes__button {
+  width: 33px;
+  height: 33px;
+  border: 2px solid #ECEEF6;
+  border-radius: 50%;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 10;
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+  margin: 0 auto;
+}
+
+.popular-dishes__button img {
+  display: block;
+}
+
+.popular-dishes__download-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 59px;
+  background: linear-gradient(287.74deg, #F58656 8.52%, #FE5626 92.72%);
+  -webkit-box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+          box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

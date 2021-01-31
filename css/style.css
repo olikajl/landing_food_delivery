@@ -495,4 +495,71 @@ img {
   font-weight: 700;
   margin-left: 16px;
 }
+
+/* Стили для feedback */
+.feedback {
+  background-color: #F0F5FB;
+  padding: 77px 0 246px 0;
+}
+
+.feedback__title {
+  max-width: 513px;
+  line-height: 150%;
+  text-align: center;
+  margin: 0 auto 43px auto;
+}
+
+.feedback__form {
+  max-width: 857px;
+  margin: 0 auto 0px auto;
+}
+
+.feedback__input {
+  background: #FFFFFF;
+  border: 2px solid #ECEEF7;
+  border-radius: 57px;
+  font-size: 14px;
+  max-width: 260px;
+  max-height: 60px;
+  padding: 20px 59px 19px 29px;
+  margin-right: 38px;
+}
+
+.feedback__input:nth-of-type(2) {
+  padding: 20px 61px 19px 27px;
+  margin-right: 34px;
+}
+
+.feedback__button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FE5626), to(#F23F0E)), #59AAF1;
+  background: linear-gradient(180deg, #FE5626 0%, #F23F0E 100%), #59AAF1;
+  -webkit-box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+          box-shadow: 0px 4px 8px rgba(205, 169, 41, 0.26);
+  border-radius: 59px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  max-width: 260px;
+  text-align: center;
+  padding: 19px 49px 20px 56px;
+}
+
+.feedback__button img {
+  margin-left: 25px;
+}
+
+.feedback__img {
+  position: relative;
+  text-align: center;
+}
+
+.feedback__img img {
+  position: absolute;
+  top: -27px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
 /*# sourceMappingURL=style.css.map */
